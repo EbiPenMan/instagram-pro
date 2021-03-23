@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace ProGraphGroup.Singleton
+namespace ProGraphGroup.Singletons
 {
     /// <summary>
     /// Inherit from this base class to create a singleton.

@@ -1,16 +1,17 @@
-
+using System;
+using ProGraphGroup.Utility;
 
 namespace ProGraphGroup.InstagramPro.Core.Model
 {
     public class Cookie
     {
         private string ig_did;
-        private int ig_nrcb;
+        private string ig_nrcb;
         private string mid;
         private string csrftoken;
-        private long ds_user_id;
+        private string ds_user_id;
         private string sessionid;
-        private int shbid;
+        private string shbid;
         private string shbts;
         private string rur;
 
@@ -18,26 +19,56 @@ namespace ProGraphGroup.InstagramPro.Core.Model
         {
         }
 
-        public Cookie(string igDid, int igNrcb, string mid, string csrftoken, long dsUserId, string sessionid, int shbid, string shbts, string rur)
+        public Cookie(string strCookie)
         {
-            ig_did = igDid;
-            ig_nrcb = igNrcb;
-            this.mid = mid;
-            this.csrftoken = csrftoken;
-            ds_user_id = dsUserId;
-            this.sessionid = sessionid;
-            this.shbid = shbid;
-            this.shbts = shbts;
-            this.rur = rur;
-        }
+            if (TextUtils.isEmpty(strCookie))
+                return;
 
+            foreach (string fields in strCookie.Split(new string[] {"; "}, StringSplitOptions.None))
+            {
+                string[] field = fields.Split(new string[] {"; "}, StringSplitOptions.None);
+
+                switch (field[0].Trim())
+                {
+                    case "ig_did":
+                        this.ig_did = field[1].Trim();
+                        break;
+                    case "ig_nrcb":
+                        this.ig_nrcb = field[1].Trim();
+                        break;
+                    case "mid":
+                        this.mid = field[1].Trim();
+                        break;
+                    case "csrftoken":
+                        this.csrftoken = field[1].Trim();
+                        break;
+                    case "ds_user_id":
+                        this.ds_user_id = field[1].Trim();
+                        break;
+                    case "sessionid":
+                        this.sessionid = field[1].Trim();
+                        break;
+                    case "shbid":
+                        this.shbid = field[1].Trim();
+                        break;
+                    case "shbts":
+                        this.shbts = field[1].Trim();
+                        break;
+                    case "rur":
+                        this.rur = field[1].Trim();
+                        break;
+                }
+
+            }
+        }
+        
         public string IgDid
         {
             get => ig_did;
             set => ig_did = value;
         }
 
-        public int IgNrcb
+        public string IgNrcb
         {
             get => ig_nrcb;
             set => ig_nrcb = value;
@@ -55,7 +86,7 @@ namespace ProGraphGroup.InstagramPro.Core.Model
             set => csrftoken = value;
         }
 
-        public long DsUserId
+        public string DsUserId
         {
             get => ds_user_id;
             set => ds_user_id = value;
@@ -67,7 +98,7 @@ namespace ProGraphGroup.InstagramPro.Core.Model
             set => sessionid = value;
         }
 
-        public int Shbid
+        public string Shbid
         {
             get => shbid;
             set => shbid = value;

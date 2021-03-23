@@ -303,11 +303,19 @@
               <e p="Login" t="Include">
                 <e p="LoginManager.cs" t="Include" />
               </e>
+              <e p="Model" t="Include">
+                <e p="Cookie.cs" t="Include" />
+              </e>
             </e>
+          </e>
+          <e p="Singletons" t="Include">
+            <e p="MonoSingleton.cs" t="Include" />
+            <e p="Singleton.cs" t="Include" />
           </e>
           <e p="Utility" t="Include">
             <e p="CookieUtils.cs" t="Include" />
             <e p="TextUtils.cs" t="Include" />
+            <e p="UnityEngineExtensions.cs" t="Include" />
           </e>
         </e>
         <e p="TapsellPlus" t="Include">
