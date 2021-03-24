@@ -1,18 +1,43 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 
-public class UserInfo : MonoBehaviour
+
+namespace ProGraphGroup.InstagramPro.Core.Model
 {
-    // Start is called before the first frame update
-    void Start()
+    public class UserInfo
     {
-        
-    }
+        private readonly string _pk;
+        private readonly string _username;
+        private readonly string _fullName;
+        private readonly string _profilePicUrl;
+        private readonly string _hdProfilePicUrl;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public UserInfo(string pk, string username, string fullName, string profilePicUrl, string hdProfilePicUrl)
+        {
+            this._pk = pk;
+            this._username = username;
+            this._fullName = fullName;
+            this._profilePicUrl = profilePicUrl;
+            this._hdProfilePicUrl = hdProfilePicUrl;
+        }
+
+        public string Pk => _pk;
+
+        public string Username => _username;
+
+        public string FullName => _fullName;
+
+        public string ProfilePicUrl => _profilePicUrl;
+
+        public string HdProfilePicUrl => _hdProfilePicUrl;
+
+        public override string ToString()
+        {
+            return "UserInfo{" +
+                   "uid='" + _pk + '\'' +
+                   ", username='" + _username + '\'' +
+                   ", fullName='" + _fullName + '\'' +
+                   ", profilePicUrl='" + _profilePicUrl + '\'' +
+                   ", hdProfilePicUrl='" + _hdProfilePicUrl + '\'' +
+                   '}';
+        }
     }
 }

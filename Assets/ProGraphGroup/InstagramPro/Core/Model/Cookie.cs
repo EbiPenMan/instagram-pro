@@ -15,18 +15,19 @@ namespace ProGraphGroup.InstagramPro.Core.Model
         private string shbts;
         private string rur;
 
-        public Cookie()
-        {
-        }
+        private string strCookie;
 
         public Cookie(string strCookie)
         {
+            
+            this.strCookie = strCookie;
+            
             if (TextUtils.isEmpty(strCookie))
                 return;
 
             foreach (string fields in strCookie.Split(new string[] {"; "}, StringSplitOptions.None))
             {
-                string[] field = fields.Split(new string[] {"; "}, StringSplitOptions.None);
+                string[] field = fields.Split(new string[] {"="}, StringSplitOptions.None);
 
                 switch (field[0].Trim())
                 {
@@ -114,6 +115,12 @@ namespace ProGraphGroup.InstagramPro.Core.Model
         {
             get => rur;
             set => rur = value;
+        }
+
+
+        public override string ToString()
+        {
+            return strCookie;
         }
     }
 }

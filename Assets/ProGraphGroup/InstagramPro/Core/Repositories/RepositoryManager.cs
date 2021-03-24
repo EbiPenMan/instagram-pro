@@ -1,18 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using ProGraphGroup.InstagramPro.Core.Login;
+using ProGraphGroup.Manager;
+using ProGraphGroup.Singletons;
+using UnityEngine.Networking;
 
-public class RepositoryManager : MonoBehaviour
+namespace ProGraphGroup.InstagramPro.Core.Repositories
 {
-    // Start is called before the first frame update
-    void Start()
+    public class RepositoryManager : Singleton<RepositoryManager>
     {
-        
-    }
+        public void AddCookiesInterceptor(ref UnityWebRequest unityWebRequest)
+        {
+            unityWebRequest.SetRequestHeader("Cookie", LoginManager.Instance.GetCurrentCookie().ToString());
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            if (unityWebRequest.GetRequestHeader("User-Agent") == null ||
+                unityWebRequest.GetRequestHeader("User-Agent") == "")
+            {
+                unityWebRequest.SetRequestHeader("User-Agent", Constants.I_USER_AGENT);
+            }
+
+            if (unityWebRequest.GetRequestHeader("Accept-Language") == null ||
+                unityWebRequest.GetRequestHeader("Accept-Language") == "")
+            {
+                unityWebRequest.SetRequestHeader("Accept-Language", MultiLanguage.Instance.GetCurrentLanguageCodeName()
+                                                                    + ",en-US;q=0.8");
+            }
+        }
     }
 }

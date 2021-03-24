@@ -3,26 +3,26 @@ using System.Collections.Generic;
 
 namespace ProGraphGroup.InstagramPro.Core.Model
 {
-    public class QueryParams
+    public class FormUrlEncoded
     {
         private Dictionary<string, string> _queryParams;
 
-        public QueryParams()
+        public FormUrlEncoded()
         {
         }
 
-        public QueryParams(Dictionary<string, string> queryParams)
+        public FormUrlEncoded(Dictionary<string, string> queryParams)
         {
             _queryParams = queryParams;
         }
 
-        public QueryParams add(string key , string value)
+        public FormUrlEncoded add(string key , string value)
         {
             _queryParams.Add(key,value);
             return this;
         }
         
-        public QueryParams remove(string key)
+        public FormUrlEncoded remove(string key)
         {
             _queryParams.Remove(key);
             return this;
@@ -39,11 +39,7 @@ namespace ProGraphGroup.InstagramPro.Core.Model
 
             foreach (string key in _queryParams.Keys)
             {
-                if (query.Equals(""))
-                {
-                    query += "?";
-                }
-                else
+                if (!query.Equals(""))
                 {
                     query += "&";
                 }

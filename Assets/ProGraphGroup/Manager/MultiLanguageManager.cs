@@ -1,18 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using ProGraphGroup.Singletons;
 
-public class MultiLanguage : MonoBehaviour
+namespace ProGraphGroup.Manager
 {
-    // Start is called before the first frame update
-    void Start()
+    public class MultiLanguage : Singleton<MultiLanguage>
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        public string GetCurrentLanguageCodeName()
+        {
+            return "en";
+        }
     }
 }

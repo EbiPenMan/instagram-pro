@@ -1,18 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+using ProGraphGroup.InstagramPro.Core.Login;
+using ProGraphGroup.Singletons;
 
-public class MainManager : MonoBehaviour
+namespace ProGraphGroup.InstagramPro.Core.Main
 {
-    // Start is called before the first frame update
-    void Start()
+    public class MainManager : MonoSingleton <MainManager>
     {
-        
-    }
+        void Start()
+        {
+            LoginManager.Instance.Login();
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

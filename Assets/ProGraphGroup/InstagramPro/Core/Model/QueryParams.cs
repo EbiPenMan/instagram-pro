@@ -1,18 +1,57 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
-public class QueryParams : MonoBehaviour
+
+namespace ProGraphGroup.InstagramPro.Core.Model
 {
-    // Start is called before the first frame update
-    void Start()
+    public class QueryParams
     {
-        
-    }
+        private Dictionary<string, string> _queryParams;
 
-    // Update is called once per frame
-    void Update()
-    {
+        public QueryParams()
+        {
+        }
+
+        public QueryParams(Dictionary<string, string> queryParams)
+        {
+            _queryParams = queryParams;
+        }
+
+        public QueryParams add(string key , string value)
+        {
+            _queryParams.Add(key,value);
+            return this;
+        }
         
+        public QueryParams remove(string key)
+        {
+            _queryParams.Remove(key);
+            return this;
+        }
+
+        public Dictionary<string, string> getAll()
+        {
+            return _queryParams;
+        }
+
+        public override string ToString()
+        {
+            string query = "";
+
+            foreach (string key in _queryParams.Keys)
+            {
+                if (query.Equals(""))
+                {
+                    query += "?";
+                }
+                else
+                {
+                    query += "&";
+                }
+
+                query += key + "=" + _queryParams[key];
+            }
+
+            return query;
+        }
     }
 }

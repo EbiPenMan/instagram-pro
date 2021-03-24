@@ -5,23 +5,19 @@ using UnityEngine.Networking;
 
 namespace ProGraphGroup.InstagramPro.Core.Repositories
 {
-    public class FeedRepository
+    public class DiscoverRepository
     {
-        async UniTask<string> fetch(FormUrlEncoded formUrlEncoded, Action<string> onDone)
+        async UniTask<string> topicalExplore(QueryParams queryParams, Action<string> onDone)
         {
-            string endPoint = $"/api/v1/feed/timeline/";
+            string endPoint = $"/api/v1/discover/topical_explore/";
+            endPoint += queryParams.ToString();
 
-            UnityWebRequest unityWebRequest =
-                UnityWebRequest.Put(Constants.BASE_URL + endPoint, formUrlEncoded.ToString());
-           
-            unityWebRequest.SetRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            
+            UnityWebRequest unityWebRequest = UnityWebRequest.Get(Constants.BASE_URL + endPoint);
             RepositoryManager.Instance.AddCookiesInterceptor(ref unityWebRequest);
 
             var op = await unityWebRequest.SendWebRequest();
             onDone.Invoke(op.downloadHandler.text);
             return op.downloadHandler.text;
         }
-
     }
 }
