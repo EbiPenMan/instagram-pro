@@ -653,6 +653,16 @@
                 <e p="ProfileRepository.cs" t="Include" />
                 <e p="RepositoryManager.cs" t="Include" />
                 <e p="Responses" t="Include">
+                  <e p="FriendshipRepoChangeResponseFriendshipStatus.cs" t="Include" />
+                  <e p="FriendshipRepoChangeRootResponse.cs" t="Include" />
+                  <e p="FriendshipRepoListFetchResponse.cs" t="Include" />
+                  <e p="FriendshipRepoRestrictResponseFriendshipStatus.cs" t="Include" />
+                  <e p="FriendshipRepoRestrictResponseUsersItem.cs" t="Include" />
+                  <e p="FriendshipRepoRestrictRootResponse.cs" t="Include" />
+                  <e p="GraphQLUserListFetchResponse.cs" t="Include" />
+                  <e p="LoginRequiredResponse.cs" t="Include" />
+                  <e p="PostsFetchResponse.cs" t="Include" />
+                  <e p="StoryStickerResponse.cs" t="Include" />
                   <e p="UserInfo.cs" t="Include" />
                 </e>
                 <e p="StoriesRepository.cs" t="Include" />
