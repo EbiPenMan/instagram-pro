@@ -2,6 +2,8 @@
 {
     public enum SuggestionType
     {
-        
+        TYPE_USER,
+        TYPE_HASHTAG,
+        TYPE_LOCATION
     }
 }

@@ -12,7 +12,8 @@ namespace ProGraphGroup.InstagramPro.Core.Repositories
             string endPoint = $"/api/v1/discover/topical_explore/";
             endPoint += queryParams.ToString();
 
-            UnityWebRequest unityWebRequest = UnityWebRequest.Get(Constants.BASE_URL + endPoint);
+            UnityWebRequest unityWebRequest = UnityWebRequest.Get(Constants.BASE_URL_I + endPoint);
+            
             RepositoryManager.Instance.AddCookiesInterceptor(ref unityWebRequest);
 
             var op = await unityWebRequest.SendWebRequest();

@@ -2,6 +2,7 @@
 {
     public enum InboxReadState
     {
-        
+        STATE_READ,
+        STATE_UNREAD,
     }
 }

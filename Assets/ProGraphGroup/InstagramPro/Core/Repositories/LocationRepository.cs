@@ -5,15 +5,16 @@ using UnityEngine.Networking;
 
 namespace ProGraphGroup.InstagramPro.Core.Repositories
 {
-    public class DiscoverRepository
+    public class LocationRepository
     {
-        async UniTask<string> topicalExplore(QueryParams queryParams, Action<string> onDone)
+        async UniTask<string> fetchPosts(
+            string locationId,
+            QueryParams queryParams, Action<string> onDone)
         {
-            string endPoint = $"/api/v1/discover/topical_explore/";
+            string endPoint = $"/api/v1/feed/location/{locationId}/";
             endPoint += queryParams.ToString();
 
-            UnityWebRequest unityWebRequest = UnityWebRequest.Get(Constants.BASE_URL + endPoint);
-            
+            UnityWebRequest unityWebRequest = UnityWebRequest.Get(Constants.BASE_URL_I + endPoint);
             
             RepositoryManager.Instance.AddCookiesInterceptor(ref unityWebRequest);
 

@@ -8,7 +8,6 @@ namespace ProGraphGroup.InstagramPro.Core.Repositories
     public class FriendshipRepository
     {
         async UniTask<string> change(
-            string userAgent,
             string action,
             string id,
             FormUrlEncoded formUrlEncoded, 
@@ -16,11 +15,10 @@ namespace ProGraphGroup.InstagramPro.Core.Repositories
         {
             string endPoint = $"/api/v1/friendships/{action}/{id}/";
 
-            UnityWebRequest unityWebRequest = UnityWebRequest.Put(Constants.BASE_URL + endPoint , 
+            UnityWebRequest unityWebRequest = UnityWebRequest.Put(Constants.BASE_URL_I + endPoint , 
                 formUrlEncoded.ToString());
             
             unityWebRequest.SetRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            unityWebRequest.SetRequestHeader("User-Agent" , userAgent);
             
             RepositoryManager.Instance.AddCookiesInterceptor(ref unityWebRequest);
             
@@ -30,18 +28,16 @@ namespace ProGraphGroup.InstagramPro.Core.Repositories
         }
         
         async UniTask<string> toggleRestrict(
-            string userAgent,
             string action,
             FormUrlEncoded formUrlEncoded, 
             Action<string> onDone)
         {
             string endPoint = $"/api/v1/restrict_action/{action}/";
 
-            UnityWebRequest unityWebRequest = UnityWebRequest.Put(Constants.BASE_URL + endPoint , 
+            UnityWebRequest unityWebRequest = UnityWebRequest.Put(Constants.BASE_URL_I + endPoint , 
                 formUrlEncoded.ToString());
             
             unityWebRequest.SetRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            unityWebRequest.SetRequestHeader("User-Agent" , userAgent);
             
             RepositoryManager.Instance.AddCookiesInterceptor(ref unityWebRequest);
             
@@ -51,7 +47,6 @@ namespace ProGraphGroup.InstagramPro.Core.Repositories
         }
         
         async UniTask<string> getList(
-            string userAgent,
             string userId,
             string type,
             QueryParams queryParams,
@@ -62,9 +57,7 @@ namespace ProGraphGroup.InstagramPro.Core.Repositories
             
             //TODO @QueryMap(encoded = true) 
             
-            UnityWebRequest unityWebRequest = UnityWebRequest.Get(Constants.BASE_URL + endPoint );
-            
-            unityWebRequest.SetRequestHeader("User-Agent" , userAgent);
+            UnityWebRequest unityWebRequest = UnityWebRequest.Get(Constants.BASE_URL_I + endPoint );
             
             RepositoryManager.Instance.AddCookiesInterceptor(ref unityWebRequest);
             

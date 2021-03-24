@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Constants
 {
-    public static readonly string BASE_URL = "https://i.instagram.com";
+    public static readonly string BASE_URL_I = "https://i.instagram.com";
+    public static readonly string BASE_URL_WWW = "https://www.instagram.com";
     
     public static readonly string USER_AGENT =
         "Mozilla/5.0 (Linux; Android 8.1.0; motorola one Build/OPKS28.63-18-3; wv) " +

@@ -2,6 +2,10 @@
 {
     public enum IntentModelType
     {
-        
+        UNKNOWN,
+        USERNAME,
+        POST,
+        HASHTAG,
+        LOCATION
     }
 }

@@ -2,6 +2,13 @@
 {
     public enum PostItemType
     {
-        
+        MAIN,
+        DISCOVER,
+        FEED,
+        SAVED,
+        LIKED,
+        TAGGED,
+        HASHTAG,
+        LOCATION
     }
 }

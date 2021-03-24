@@ -1,4 +1,9 @@
-﻿$HEADER$namespace $NAMESPACE$
+﻿namespace ProGraphGroup.InstagramPro.Core.Model.Enums
 {
-  public enum $ENUM$ {$END$}
+    public enum FavoriteType
+    {
+        USER,
+        HASHTAG,
+        LOCATION
+    }
 }

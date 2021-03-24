@@ -5,14 +5,17 @@ using UnityEngine.Networking;
 
 namespace ProGraphGroup.InstagramPro.Core.Repositories
 {
-    public class DiscoverRepository
+    public class GraphQLRepository
     {
-        async UniTask<string> topicalExplore(QueryParams queryParams, Action<string> onDone)
+        async UniTask<string> fetch(QueryParams queryParams, Action<string> onDone)
         {
-            string endPoint = $"/api/v1/discover/topical_explore/";
+            string endPoint = $"/graphql/query/";
             endPoint += queryParams.ToString();
 
-            UnityWebRequest unityWebRequest = UnityWebRequest.Get(Constants.BASE_URL + endPoint);
+            UnityWebRequest unityWebRequest = UnityWebRequest.Get(Constants.BASE_URL_WWW + endPoint);
+            
+            //TODO @QueryMap(encoded = true) 
+            
             RepositoryManager.Instance.AddCookiesInterceptor(ref unityWebRequest);
 
             var op = await unityWebRequest.SendWebRequest();

@@ -2,6 +2,8 @@
 {
     public enum RavenMediaViewType
     {
-        
+        PERMANENT,
+        REPLAYABLE,
+        ONCE,   
     }
 }

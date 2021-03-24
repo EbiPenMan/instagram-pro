@@ -12,7 +12,7 @@ namespace ProGraphGroup.InstagramPro.Core.Repositories
             string endPoint = $"/api/v1/feed/timeline/";
 
             UnityWebRequest unityWebRequest =
-                UnityWebRequest.Put(Constants.BASE_URL + endPoint, formUrlEncoded.ToString());
+                UnityWebRequest.Put(Constants.BASE_URL_I + endPoint, formUrlEncoded.ToString());
            
             unityWebRequest.SetRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             
