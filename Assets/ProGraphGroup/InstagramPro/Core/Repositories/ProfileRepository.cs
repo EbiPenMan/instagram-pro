@@ -7,7 +7,7 @@ namespace ProGraphGroup.InstagramPro.Core.Repositories
 {
     public class ProfileRepository
     {
-        async UniTask<string> getUserInfo(string uid, Action<string> onDone)
+        internal async UniTask<string> getUserInfo(string uid, Action<string> onDone)
         {
             string endPoint = $"/api/v1/users/{uid}/info/";
 

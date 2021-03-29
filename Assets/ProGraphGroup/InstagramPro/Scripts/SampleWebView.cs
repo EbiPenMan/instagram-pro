@@ -190,59 +190,59 @@ public class SampleWebView : MonoBehaviour
         yield break;
     }
 
-    void OnGUI()
-    {
-        GUI.enabled = webViewObject.CanGoBack();
-        if (GUI.Button(new Rect(10, 10, 80, 80), "<"))
-        {
-            webViewObject.GoBack();
-        }
-
-        GUI.enabled = true;
-
-        GUI.enabled = webViewObject.CanGoForward();
-        if (GUI.Button(new Rect(100, 10, 80, 80), ">"))
-        {
-            webViewObject.GoForward();
-        }
-
-        GUI.enabled = true;
-
-        if (GUI.Button(new Rect(200, 10, 80, 80), "r"))
-        {
-            webViewObject.Reload();
-        }
-
-        GUI.TextField(new Rect(300, 10, 200, 80), "" + webViewObject.Progress());
-
-        if (GUI.Button(new Rect(600, 10, 80, 80), "*"))
-        {
-            var g = GameObject.Find("WebViewObject");
-            if (g != null)
-            {
-                Destroy(g);
-            }
-            else
-            {
-                StartCoroutine(Start());
-            }
-        }
-
-        GUI.enabled = true;
-
-        if (GUI.Button(new Rect(700, 10, 80, 80), "c"))
-        {
-            Debug.Log(webViewObject.GetCookies(Url));
-        }
-        
-        
-        if (GUI.Button(new Rect(50, 100, 80, 80), "allc"))
-        {
-            Debug.Log(getAllCook());
-        }
-
-        GUI.enabled = true;
-    }
+//    void OnGUI()
+//    {
+//        GUI.enabled = webViewObject.CanGoBack();
+//        if (GUI.Button(new Rect(10, 10, 80, 80), "<"))
+//        {
+//            webViewObject.GoBack();
+//        }
+//
+//        GUI.enabled = true;
+//
+//        GUI.enabled = webViewObject.CanGoForward();
+//        if (GUI.Button(new Rect(100, 10, 80, 80), ">"))
+//        {
+//            webViewObject.GoForward();
+//        }
+//
+//        GUI.enabled = true;
+//
+//        if (GUI.Button(new Rect(200, 10, 80, 80), "r"))
+//        {
+//            webViewObject.Reload();
+//        }
+//
+//        GUI.TextField(new Rect(300, 10, 200, 80), "" + webViewObject.Progress());
+//
+//        if (GUI.Button(new Rect(600, 10, 80, 80), "*"))
+//        {
+//            var g = GameObject.Find("WebViewObject");
+//            if (g != null)
+//            {
+//                Destroy(g);
+//            }
+//            else
+//            {
+//                StartCoroutine(Start());
+//            }
+//        }
+//
+//        GUI.enabled = true;
+//
+//        if (GUI.Button(new Rect(700, 10, 80, 80), "c"))
+//        {
+//            Debug.Log(webViewObject.GetCookies(Url));
+//        }
+//        
+//        
+//        if (GUI.Button(new Rect(50, 100, 80, 80), "allc"))
+//        {
+//            Debug.Log(getAllCook());
+//        }
+//
+//        GUI.enabled = true;
+//    }
 
     string getAllCook()
     {

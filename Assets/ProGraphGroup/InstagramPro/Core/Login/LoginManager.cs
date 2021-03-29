@@ -1,12 +1,16 @@
+using System;
 using System.Collections;
 using Cysharp.Threading.Tasks;
 using ProGraphGroup.InstagramPro.Core.Model;
+using ProGraphGroup.InstagramPro.Core.Repositories.Responses;
+using ProGraphGroup.InstagramPro.Core.WebServices;
 using ProGraphGroup.Singletons;
 using ProGraphGroup.Utility;
 using UniRx;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.Serialization;
+using Object = UnityEngine.Object;
 
 namespace ProGraphGroup.InstagramPro.Core.Login
 {
@@ -17,12 +21,18 @@ namespace ProGraphGroup.InstagramPro.Core.Login
         private Cookie _currentCookie;
         CompositeDisposable disposables = new CompositeDisposable();
 
-        public void Login()
+        public UserInfoResponse myUserInfoResponse;
+        private Action login_onDone;
+
+        private bool debug_insta_web = false;
+        
+        public void Login(Action onDone)
         {
+            login_onDone = onDone;
             //TODO check old cookie
 
-            saveCookie(
-                "ig_did=769417AD-CB07-4366-94A9-58F394338F78; ig_nrcb=1; mid=YFoMOQABAAHovZcQYAy9Ijnmue8A; csrftoken=GlfMLRGrTNVqEb40skZ8jR6VYijQqsr6; rur=FTW; ds_user_id=1723592186; sessionid=1723592186%3AVSj0UslkcisAYA%3A15");
+//            saveCookie(
+//                "ig_did=769417AD-CB07-4366-94A9-58F394338F78; ig_nrcb=1; mid=YFoMOQABAAHovZcQYAy9Ijnmue8A; csrftoken=GlfMLRGrTNVqEb40skZ8jR6VYijQqsr6; rur=FTW; ds_user_id=1723592186; sessionid=1723592186%3AVSj0UslkcisAYA%3A15");
 
 
             _currentCookie = loadCookie();
@@ -30,21 +40,37 @@ namespace ProGraphGroup.InstagramPro.Core.Login
             if (_currentCookie != null)
             {
                 Debug.Log("[LoginManager][Login()] - login OK!");
-                getUserInfo();
+                ProfileService.Instance.getUserInfo(_currentCookie.DsUserId,
+                    new ServiceCallback<UserInfoResponse>(
+                        userInfo =>
+                        {
+                            myUserInfoResponse = userInfo; 
+                            login_onDone.Invoke();
+                        },
+                        error =>
+                        {
+                            Debug.Log("[LoginManager][Login] - onFailure get userInfo, error: " + error.ToString());
+                        }
+                    )
+                );
             }
             else
             {
-                //TODO login webview
-                Observable.EveryUpdate().Subscribe(x =>
+
+                if (!debug_insta_web)
                 {
-                    string cookie = _webViewObject.GetCookies(url);
-                    if (checkCookie(cookie))
+                    Observable.EveryUpdate().Subscribe(x =>
                     {
-                        Debug.Log(cookie);
-                        onGetCookie(cookie);
-                        disposables.Clear();
-                    }
-                }).AddTo(disposables);
+                        string cookie = _webViewObject.GetCookies(url);
+                        if (checkCookie(cookie))
+                        {
+                            Debug.Log(cookie);
+                            onGetCookie(cookie);
+                            disposables.Clear();
+                        }
+                    }).AddTo(disposables);
+                }
+
                 initAndShowWebView();
             }
         }
@@ -65,7 +91,7 @@ namespace ProGraphGroup.InstagramPro.Core.Login
         {
             saveCookie(cookie);
             destroyWebView();
-            Login();
+            Login(login_onDone);
         }
 
         private void destroyWebView()
@@ -97,7 +123,7 @@ namespace ProGraphGroup.InstagramPro.Core.Login
 
         private Cookie loadCookie()
         {
-            if (!PlayerPrefs.HasKey("cookie"))
+            if (!PlayerPrefs.HasKey("cookie")  || debug_insta_web)
                 return null;
 
             string cookie = PlayerPrefs.GetString("cookie");

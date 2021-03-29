@@ -1,26 +1,39 @@
+using System.Collections.Generic;
 using ProGraphGroup.InstagramPro.Core.Login;
+using ProGraphGroup.InstagramPro.Core.Model;
 using ProGraphGroup.Singletons;
 using ProGraphGroup.Utility;
 using UnityEngine.UI;
 
 namespace ProGraphGroup.InstagramPro.Core.Main.Managers
 {
-    public class MainManager : MonoSingleton <MainManager>
+    public class AccountManager : Singleton <AccountManager>
     {
 
-        public Text txt_name;
-        public LoadImage imgLoad_pic;
+        public bool isLoadedAccounts = false;
+        public List<Account> accounts = new List<Account>();
         
-        void Start()
+        
+        public void LoadAllAccounts()
         {
-            LoginManager.Instance.Login(
-                () =>
-                {
-                    imgLoad_pic.GetSprite(LoginManager.Instance.myUserInfoResponse.User.ProfilePicUrl , true);
-                    txt_name.text = LoginManager.Instance.myUserInfoResponse.User.FullName;
-                }
-                );
+            
+        }
+   
+        public void SaveAccount(Account account)
+        {
+            
         }
 
+        public void RemoveAccount(Account account)
+        {
+            
+        }
+        
+        public void RemoveAllAccount()
+        {
+            
+        }
     }
+
+   
 }

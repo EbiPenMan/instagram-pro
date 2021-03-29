@@ -3,7 +3,7 @@ using ProGraphGroup.InstagramPro.Core.Model.Core;
 
 namespace ProGraphGroup.InstagramPro.Core.Repositories.Responses
 {
-    public class UserInfo
+    public class UserInfoResponse
     {
         [JsonProperty("user")] public User User { get; set; }
 

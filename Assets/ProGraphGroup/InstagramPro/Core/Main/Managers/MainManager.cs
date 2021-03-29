@@ -3,7 +3,7 @@ using ProGraphGroup.Singletons;
 using ProGraphGroup.Utility;
 using UnityEngine.UI;
 
-namespace ProGraphGroup.InstagramPro.Core.Main
+namespace ProGraphGroup.InstagramPro.Core.Main.Managers
 {
     public class MainManager : MonoSingleton <MainManager>
     {

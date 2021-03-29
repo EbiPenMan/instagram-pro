@@ -2,27 +2,176 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a46bc32-8971-4c40-8122-4ff658f264e5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/FriendshipRepoChangeResponseFriendshipStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/FriendshipRepoChangeResponseFriendshipStatus.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/FriendshipRepoChangeRootResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/FriendshipRepoChangeRootResponse.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/FriendshipRepoListFetchResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/FriendshipRepoListFetchResponse.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/FriendshipRepoRestrictResponseFriendshipStatus.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/FriendshipRepoRestrictResponseFriendshipStatus.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/FriendshipRepoRestrictResponseUsersItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/FriendshipRepoRestrictResponseUsersItem.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/FriendshipRepoRestrictRootResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/FriendshipRepoRestrictRootResponse.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/GraphQLUserListFetchResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/GraphQLUserListFetchResponse.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/LoginRequiredResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/PostsFetchResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/PostsFetchResponse.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/StoryStickerResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/StoryStickerResponse.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Doozy/Engine/Nody/Resources/NodySettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Doozy/Engine/Nody/Resources/NodySettings.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/Components.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/Components/PageViewController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/Components/PageViewController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Configs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Configs/ErrorConst.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Configs/ErrorConst.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Managers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Managers/AccountManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Managers/AccountManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Managers/MainManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Account.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Account.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Core.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Core/User.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Core/User.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/ErrorModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/ErrorModel.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/UserInfoResponse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/WebServices.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/WebServices/DiscoverService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/WebServices/DiscoverService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/WebServices/ProfileService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/WebServices/ProfileService.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/WebServices/ServiceCallback.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/WebServices/ServiceCallback.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Scenes/SampleWebView.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Scenes/SampleWebView.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Scripts/SampleWebView.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Scripts/SampleWebView.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_108.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_108.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_144.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_144.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_162.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_162.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_192.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_216.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_216.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_324.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_324.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_36.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_36.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_432.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_432.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_48.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_48.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_72.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_72.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_81.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_81.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/appIcon/icon_96.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_26-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_26-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_27-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_27-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_28-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_28-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_29-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_29-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_3-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_3-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_31-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_31-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_33-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_33-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_34-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_34-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_35-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_35-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_36-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_36-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_37-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_37-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_38-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_38-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_39-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_39-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_40-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_40-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_41-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_41-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_42-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_42-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_43-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_43-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_45-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_45-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_46-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_46-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_47-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_47-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_48-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_48-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_49-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_49-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_50-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_50-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_51-128.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Sprites/icons/Asset_51-128.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/Manager/CacheManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/Manager/CacheManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/Manager/LocalStorageManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/Manager/LocalStorageManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/Manager/LogManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/Manager/LogManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/Utility/LoadImage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/Utility/LoadImage.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.InstagramPro/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InstagramPro/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.InstagramPro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.InstagramPro/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Common.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Core.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Platforms.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.Platforms.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.iOS.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/GoogleMobileAds.iOS.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Resources.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/link.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GoogleMobileAds/link.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/googlemobileads-unity.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/googlemobileads-unity.aar.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/mainTemplate.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/mainTemplate.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/IngameDebugConsole.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/IngameDebugConsole/IngameDebugConsole.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Login/LoginManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Login/LoginManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Constants.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Configs/Constants.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Constants.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Configs/Constants.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/MainManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/MainManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Managers/MainManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/ProfileRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/ProfileRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/UserInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/UserInfo.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/UserInfoResponse.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Services.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/BannerType.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/BannerType.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/ClickHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/ClickHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/Gravity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/Gravity.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellError.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellError.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlus.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusAndroidPlugin.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusAndroidPlugin.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusIOSPlugin.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusIOSPlugin.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusMessageHandler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusMessageHandler.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusNativeBannerAd.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusNativeBannerAd.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusPlugin.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlusPlugin.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,10 +185,13 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/FeedRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/System/Unit.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Core/User.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../qeysar/zInfinite8/Utility/InfiniteUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/IntentModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Managers/AccountManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/DirectMessages/InboxModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/LocationModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Configs/ErrorConst.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/NewsRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/NotificationModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/DirectMessages/InboxThreadModel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -54,15 +206,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/FriendshipRepoListFetchResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/QueryParams.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/PostsLayoutPreferences.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/UserInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/UserInfoResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Enums/FavoriteType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Stickers/PollModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/97722D3A-BC9F-4CF6-9F9E-21E6770081B3/7e/6fc40a84/JObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/StoryModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/FriendshipRepoRestrictResponseFriendshipStatus.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Constants.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Configs/Constants.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Enums/InboxReadState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Stickers/QuestionModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/MainManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Managers/MainManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/SuggestionModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/FriendshipRepoRestrictResponseUsersItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/DiscoverRepository.cs" root0="FORCE_HIGHLIGHTING" />
@@ -74,6 +227,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Enums/MediaItemType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Stickers/SliderModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/TopicCluster.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/Manager/MultiLanguageManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/ViewerPostModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/GraphQLUserListFetchResponse.cs" root0="FORCE_HIGHLIGHTING" />
@@ -87,36 +241,48 @@
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/StoryStickerResponse.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Enums/RavenExpiringMediaType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Enums/RavenMediaViewType.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TapsellPlus/TapsellPlus.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/Singletons/Singleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/Utility/CookieUtils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/Singletons/MonoSingleton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Enums/SuggestionType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Login/LoginManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Enums/UserInboxDirection.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Scripts/SampleWebView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/RepositoryManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A640F6C-B241-40B6-897C-AC910F849430/53/74935343/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/LocationRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../qeysar/zInfinite8/Services/GameServices/Models/Response/AddFeedbackBaseResponseModel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/StoriesRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/BasePostModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/UnityFileDebug/Lib/Logger/Scripts/DebugWrapper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../qeysar/zInfinite8/Services/GameServices/Models/Request/AddFeedbackRequestModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A640F6C-B241-40B6-897C-AC910F849430/82/80898195/StackTrace.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/Utility/UnityEngineExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../qeysar/zInfinite8/Services/GameServices/JsonConvertProperty.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/Utility/LoadImage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/MediaRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../qeysar/zInfinite8/Services/GameServices/RestApi.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/ProfileModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/50F55621-A2CA-4F31-A352-83E2979A8BF5/18/3935a59f/LogLevel.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/unity-webview-master/unity-webview-master/sample/Assets/Scripts/SampleCustomHeader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../qeysar/zInfinite8/Services/GameServices/GameService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../qeysar/zInfinite8/Utility/EventManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../qeysar/zInfinite8/Utility/GameData/GameData.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/Manager/LogManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/CommentModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/WebServices/ProfileService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../qeysar/zInfinite8/Services/GameServices/Models/Response/GamePlatformModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/WebServices/DiscoverService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/DiscoverItemModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/Components/PageViewController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../qeysar/zInfinite8/Utility/LoadImage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/DiscoverTopicModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Downloads/unity-webview-master/unity-webview-master/sample/Assets/Scripts/SampleWebView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/FeedModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Account.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A640F6C-B241-40B6-897C-AC910F849430/0d/dee47769/DateTime.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/FriendshipRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7A640F6C-B241-40B6-897C-AC910F849430/85/88941ea4/Decimal.cs" root0="SKIP_HIGHLIGHTING" />
@@ -124,40 +290,23 @@
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/TagsRepository.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/Utility/GeneralUtils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/FollowModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/WebServices/ServiceCallback.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Operators/Aggregate.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/WebViewObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/UnityEngineBridge/ReactiveDictionary.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/HashtagModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/Manager/CacheManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Cookie.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/FormUrlEncoded.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/HighlightModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/Manager/LocalStorageManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/DirectMessages/InboxMediaModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/ImageUploadOptions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/ErrorModel.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Enums/IntentModelType.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Enums/MediaItemType.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Enums/NotificationType.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Enums/PostItemType.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Enums/RavenExpiringMediaType.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Enums/RavenMediaViewType.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Enums/SuggestionType.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Enums/UserInboxDirection.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/ProfileModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/Utility/GeneralUtils.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/DirectMessages/DirectItemModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/DirectMessages/InboxModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/DirectMessages/InboxThreadModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/DirectMessages/InboxMediaModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Stickers/SliderModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Stickers/SwipeUpModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Stickers/QuizModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Stickers/QuestionModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Stickers/PollModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/ViewerPostModelWrapper.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/ViewerPostModel.cs" />
-        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/TopicCluster.cs" />
         <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/SuggestionModel.cs" />
         <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/StoryModel.cs" />
         <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/PostsLayoutPreferences.cs" />
@@ -187,6 +336,28 @@
         <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/LoginRequiredResponse.cs" />
         <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/PostsFetchResponse.cs" />
         <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/StoryStickerResponse.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/Utility/LoadImage.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/WebServices/DiscoverService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Plugins/Android/mainTemplate.gradle" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Scripts/SampleWebView.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Core/User.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/UserInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Repositories/Responses/UserInfoResponse.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/ErrorConst.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/WebServices/ServiceCallback.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/ErrorModel.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/MainManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Login/LoginManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/Manager/LogManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/WebServices/ProfileService.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Managers/MainManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/Manager/MultiLanguage.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/Manager/StorageManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/Manager/CacheManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/Manager/LocalStorageManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Model/Account.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/InstagramPro/Core/Main/Managers/AccountManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/ProGraphGroup/Components/PageViewController.cs" />
       </list>
     </option>
   </component>
@@ -227,10 +398,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="22612">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="12256">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="22612" />
+      <option name="pid" value="12256" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -247,7 +418,9 @@
       <updated>1616423446539</updated>
       <workItem from="1616423448184" duration="1248000" />
       <workItem from="1616435118753" duration="22823000" />
-      <workItem from="1616575390456" duration="24504000" />
+      <workItem from="1616575390456" duration="36962000" />
+      <workItem from="1616699163591" duration="2865000" />
+      <workItem from="1616856242852" duration="8980000" />
     </task>
     <servers />
   </component>
